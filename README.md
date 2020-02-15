@@ -53,5 +53,5 @@ class Solution {
 ## Implementation 2 : O(1)
 
 # References :
-https://www.youtube.com/watch?v=OvpKeraoxW0
-https://github.com/bephrem1/backtobackswe/tree/master/Linked%20Lists/CloneLinkedListWithRandomPointers
+1. https://www.youtube.com/watch?v=OvpKeraoxW0
+2. https://github.com/bephrem1/backtobackswe/tree/master/Linked%20Lists/CloneLinkedListWithRandomPointers
