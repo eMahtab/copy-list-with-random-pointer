@@ -10,6 +10,10 @@ The Linked List is represented in the input/output as a list of n nodes. Each no
 val: an integer representing Node.val
 random_index: the index of the node (range from 0 to n-1) where random pointer points to, or null if it does not point to any node.
 
+## From the past :
+Well, we already know how to clone a linked list. 
+Just iterate through the linked list, create new node and connect the previous node with the current node, and update the pointers.
+
 ```java
 public ListNode clone(ListNode head) {
      ListNode prev = null, copyHead = null, ptr = head;
@@ -26,6 +30,8 @@ public ListNode clone(ListNode head) {
    return copyHead;
 }
 ```
+But wait, this problem have an extra level of complexity. In this list each node have a random pointer, which may point to a node forward in the list.
+So we better first create all the nodes (in the first iteration) and in the second iteration just connect the next and random pointer correctly.
 
 
 ## Implementation 1 : O(n)
