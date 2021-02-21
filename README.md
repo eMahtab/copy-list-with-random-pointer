@@ -12,19 +12,19 @@ random_index: the index of the node (range from 0 to n-1) where random pointer p
 
 ```java
 public ListNode clone(ListNode head) {
-		ListNode prev = null, copyHead = null, ptr = head;
-		while(ptr != null) {
-			ListNode node = new ListNode(ptr.val);
-			if(prev == null) 
-				copyHead = node;
-			if(prev != null) {
-				prev.next = node;
-			}
-			prev = node;
-			ptr = ptr.next;
-		}
-		return copyHead;
+     ListNode prev = null, copyHead = null, ptr = head;
+     while(ptr != null) {
+	ListNode node = new ListNode(ptr.val);
+	if(prev == null) 
+	   copyHead = node;
+	if(prev != null) {
+	   prev.next = node;
 	}
+	prev = node;
+	ptr = ptr.next;
+     }
+   return copyHead;
+}
 ```
 
 
