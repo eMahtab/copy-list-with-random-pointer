@@ -31,7 +31,9 @@ public ListNode clone(ListNode head) {
 }
 ```
 But wait, this problem have an extra level of complexity. 
+
 In this list each node have a random pointer, which may point to a node, which may be forward in the list.
+
 So we better first create all the nodes (in the first iteration) and in the second iteration just connect the next and random pointer correctly.
 
 
