@@ -10,6 +10,24 @@ The Linked List is represented in the input/output as a list of n nodes. Each no
 val: an integer representing Node.val
 random_index: the index of the node (range from 0 to n-1) where random pointer points to, or null if it does not point to any node.
 
+```java
+public ListNode clone(ListNode head) {
+		ListNode prev = null, copyHead = null, ptr = head;
+		while(ptr != null) {
+			ListNode node = new ListNode(ptr.val);
+			if(prev == null) 
+				copyHead = node;
+			if(prev != null) {
+				prev.next = node;
+			}
+			prev = node;
+			ptr = ptr.next;
+		}
+		return copyHead;
+	}
+```
+
+
 ## Implementation 1 : O(n)
 
 ```java
